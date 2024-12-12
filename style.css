@@ -1,0 +1,645 @@
+/* Reset de base */
+* {
+    font-family: 'Poppins', sans-serif; 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#accueil {
+    flex: 1; /* Makes this section expand to take available space */
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+    margin-top: auto; /* Ensures the footer stays at the bottom */
+}
+
+
+
+/* style contacte page */
+
+#header-contact{
+    background-color: white;
+}
+ 
+#header-contact nav ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+
+/* Styles du header et de la navigation */
+header {
+    background-color: #333;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+    color: #ddd;
+}
+
+header {
+    background-color: #333;
+    padding: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 2rem;
+    
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+    color: #dc7539;
+    transition: 0.48s;
+}
+
+
+
+/* Section d'accueil */
+#accueil {
+    background-color: white;
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.test{
+    color: #333;
+}
+.presentation {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    gap: 3rem;
+}
+
+.text {
+    flex: 1;
+}
+
+.text h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #000000;
+}
+
+.text h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #dc7539;
+    margin-bottom: 1rem;
+}
+
+.text p {
+    color: #000000;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+
+.profile-image-container {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+   
+}
+
+.profile-image {
+    width: 100%;
+    max-width: 550px; /* Ajuste la taille de l'image */
+    border-radius: 100%; /* Ajoute un léger arrondi */
+    object-fit: cover;
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.footer-content a {
+    color: white;
+    text-decoration: none;
+    margin: 0 0;
+    transition: color 0.3s ease;
+}
+
+
+
+.social-media a {
+    margin: 0 120px;
+    font-size: 1.2rem;
+}
+
+
+
+#equtation {
+    background-color: #fff;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+}
+
+/* Style pour les sections */
+#equtation section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Style pour les images */
+#equtation img {
+    max-width: 200px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Style pour les paragraphes */
+#equtation p {
+    flex: 1;
+    font-size: 16px;
+    line-height: 1.8;
+    text-align: justify;
+    margin: 0;
+}
+
+/* Ajout d'un effet visuel lors du survol */
+#equtation:hover {
+    transform: translateY(-5px);
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Modal container for zoom */
+#imageModal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#imageModal img {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 90%;
+}
+
+
+/*   ---------------------------------------                        Projets                      ---------------------------------------                             */
+
+
+.navRealisation{
+    padding: 10px;
+    margin-bottom: 10px;
+    position:initial;
+    text-shadow:#dc7539;
+    box-shadow: #dc7539;
+    width: 100%;
+    background-color: #e8e8e8d2;
+}
+
+
+.navRealisation a{
+
+    color:#000000;
+    font-size: 1.5em;
+
+}
+
+
+
+/* Style général pour la section principale */
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: #f9f9f9;
+}
+
+/* Style pour chaque projet */
+.project {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Style pour les images des projets */
+.project img {
+    flex: 1 1 30%;
+    max-width: 300px;
+    height: auto;
+    object-fit: cover;
+    border-right: 1px solid #e0e0e0;
+}
+
+/* Conteneur des informations du projet */
+.project-info {
+    flex: 1 1 70%;
+    padding: 1.5rem;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Titre du projet */
+.project-info h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #000000;
+}
+
+/* Description du projet */
+.project-info p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+/* Mise en évidence des technologies */
+.project-info p strong {
+    color: #000000;
+}
+
+/* Style responsive */
+@media (max-width: 768px) {
+    .project {
+        flex-direction: column;
+    }
+    .project img {
+        flex: 1 1 100%;
+        max-width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #e0e0e0;
+    }
+    .project-info {
+        flex: 1 1 100%;
+    }
+}
+
+/* Style de base pour les boutons */
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    background-color:#dc7539;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+
+.btn:hover {
+    background-color: #000000;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.project-info .btn {
+    align-self: flex-start;
+}
+
+
+
+
+
+/*   ---------------------------------------                        Projets                      ---------------------------------------                             */
+
+
+
+/* Style général */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+
+
+#body-contact{
+    background-color: #1f1f1f;
+
+}
+#body-contact p{
+    color: white;
+    
+}
+.contact-main{
+    padding: 20px;
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+.contact-info {
+    margin-bottom: 40px;
+}
+.contact-info img{
+    width: 50%;
+    border-radius: 50%;
+    float:right ;
+}
+
+.contact-info p {
+    font-size: 1.1em;
+}
+
+#titreinfo{
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+.contact-info a {
+    color:#dc7539;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    margin-top: 40px;
+}
+
+
+
+
+
+
+
+/*<-------------------------------------------                cursus                -------------------------------->   */
+
+
+
+#cursus{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+
+.timeline {
+    width: 80%;
+    margin: 40px auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timeline-item {
+    position: relative;
+    background: #fff;
+    border-left: 3px solid #dc7539;
+    margin: 20px 0;
+    padding: 15px 20px;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-item .date {
+    font-size: 0.9em;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.timeline-item h3 {
+    margin: 5px 0;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -8px;
+    top: 15px;
+    width: 10px;
+    height: 10px;
+    background: #dc7539;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 120, 215, 0.5);
+}
+
+
+#mohamed-taarit{
+    color: #dc7539;
+}
+
+
+/*            ------------------------------            cursor      -------------------------------*/
+
+body {
+    cursor: url("data:image/svg+xml,%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='24px' height='24px' viewBox='0 0 512 512' style='enable-background:new 0 0 512.011 512.011;' xml:space='preserve'%3E%3Cpath fill='%23DC7539' d='M434.215,344.467L92.881,3.134c-4.16-4.171-10.914-4.179-15.085-0.019 c-2.011,2.006-3.139,4.731-3.134,7.571v490.667c0.003,4.382,2.685,8.316,6.763,9.92c4.081,1.603,8.727,0.545,11.712-2.667 l135.509-145.92h198.016c5.891,0.011,10.675-4.757,10.686-10.648C437.353,349.198,436.226,346.473,434.215,344.467z'/%3E%3C/svg%3E"), pointer;
+    
+}
+
+
+.contact-info p {
+    font-size: 1.2em;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.contact-info i {
+    margin-right: 10px;
+    color: #f39c12; /* Couleur des icônes */
+    font-size: 1.5em;
+}
+
+
+
+
+
+
+
+
+
+.skills {
+    margin: 20px 0;
+    text-align: left;
+}
+
+.skills h1 {
+    font-size: 1.8em;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.skills-list {
+    margin-left: 2%;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4%;
+}
+
+.skills-list li {
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+    color: #dc7539; /* Couleur des textes */
+}
+
+.skills-list i, .skills-list img {
+    margin-right: 10px;
+    font-size: 1.5em;
+}
+
+/* langues */
+
+
+.skills {
+    margin: 20px 0;
+    text-align: left;
+}
+
+.langues-list {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5%;
+}
+
+.langues-list li {
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+    color: #000000; /* Couleur des textes */
+}
+
+#petit-message{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Highlight the active navigation link */
+nav ul li a.active {
+    color: #dc7539; /* Set the color of the active link */
+    font-weight: bold; /* Make the active link bold */
+    text-decoration: none; /* Ensure no extra underline */
+}
+
+nav ul li a.active1 {
+    color: #dc7539; /* Set the color of the active link */
+    font-weight: bold; /* Make the active link bold */
+    text-decoration: none; /* Ensure no extra underline */
+}
+
+nav ul li a.active2 {
+    color: #dc7539; /* Set the color of the active link */
+    font-weight: bold; /* Make the active link bold */
+    text-decoration: none; /* Ensure no extra underline */
+}
+
+nav ul li a.active3 {
+    color: #dc7539; /* Set the color of the active link */
+    font-weight: bold; /* Make the active link bold */
+    text-decoration: none; /* Ensure no extra underline */
+}
+
+nav ul li a.active4 {
+    color: #dc7539; /* Set the color of the active link */
+    font-weight: bold; /* Make the active link bold */
+    text-decoration: none; /* Ensure no extra underline */
+}
+
