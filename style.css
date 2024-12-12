@@ -625,6 +625,53 @@ nav ul li a.active1 {
     text-decoration: none; /* Ensure no extra underline */
 }
 
+
+
+
+/* For devices with a max-width of 768px (tablets, mobile phones in landscape) */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Stack navigation links vertically */
+        gap: 1rem;
+    }
+
+    #accueil .presentation {
+        flex-direction: column; /* Stack text and image */
+        gap: 2rem;
+    }
+
+    .profile-image {
+        max-width: 300px; /* Smaller image on mobile */
+    }
+
+    .skills-list {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+/* For devices with a max-width of 480px (small phones) */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px; /* Adjust base font size */
+    }
+
+    .text h1 {
+        font-size: 2rem; /* Smaller heading font size */
+    }
+
+    .navRealisation a {
+        font-size: 1rem;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+}
+
+
+
+
 nav ul li a.active2 {
     color: #dc7539; /* Set the color of the active link */
     font-weight: bold; /* Make the active link bold */
@@ -642,4 +689,25 @@ nav ul li a.active4 {
     font-weight: bold; /* Make the active link bold */
     text-decoration: none; /* Ensure no extra underline */
 }
+
+
+
+
+.profile-image {
+    width: 100%; /* Fully responsive */
+    max-width: 550px; /* Restrict the largest size */
+}
+
+.timeline-item {
+    width: 90%; /* Shrinks appropriately on smaller screens */
+    margin: 10px auto;
+}
+
+
+img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover;
+}
+
 
