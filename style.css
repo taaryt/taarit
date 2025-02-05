@@ -49,6 +49,25 @@ header {
     padding: 1rem;
 }
 
+
+@media (max-width: 768px) {
+    header nav ul {
+        display: block;
+        text-align: center;
+}
+/* Styles pour les très petits écrans */
+@media (max-width: 480px) {
+    .project-info h2 {
+        font-size: 1.2em;
+    }
+
+    .project-info p {
+        font-size: 0.9em;
+    }
+}
+
+
+    
 nav ul {
     list-style: none;
     display: flex;
