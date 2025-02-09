@@ -7,12 +7,20 @@
 }
 
 
-.timeline-item img {
-    width: 40px; /* Ajuste la taille selon tes besoins */
-    height: auto; /* Garde les proportions */
-    display: block; /* Évite les espaces indésirables */
-    margin: 10px auto; /* Centre l'image horizontalement */
+
+/* Pour aligner le logo et le titre */
+.timeline-item h3 {
+    display: flex;           /* Utilise flexbox pour la disposition */
+    align-items: center;     /* Aligne verticalement au centre */
+    gap: 10px;               /* Espacement entre l'image et le texte */
 }
+
+/* Optionnel, pour ajuster la taille du logo */
+.timeline-item img {
+    width: 40px;             /* Ajuste la taille de l'image */
+    height: auto;            /* Garde les proportions de l'image */
+}
+
 
 
 
