@@ -8,7 +8,7 @@
 
 
 .timeline-item img {
-    width: 80px; /* Ajuste la taille selon tes besoins */
+    width: 20px; /* Ajuste la taille selon tes besoins */
     height: auto; /* Garde les proportions */
     display: block; /* Évite les espaces indésirables */
     margin: 10px auto; /* Centre l'image horizontalement */
