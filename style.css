@@ -6,7 +6,30 @@
     box-sizing: border-box;
 }
 
+/*    ------------------------------------------------------------------              */
 
+.container {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+@media (max-width: 768px) {
+    .project-item {
+        width: 100%; /* Stack items vertically */
+    }
+}
+/*    ------------------------------------------------------------------              */
 
 /* Pour aligner le logo et le titre */
 .timeline-item h3 {
