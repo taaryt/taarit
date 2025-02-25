@@ -770,3 +770,17 @@ img {
 }
 
 
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+
