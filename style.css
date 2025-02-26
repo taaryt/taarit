@@ -345,19 +345,27 @@ footer {
 /* Style pour les images des projets */
 .project img {
     flex: 1 1 30%;
-    max-width: 300px;
-    height: auto;
-    object-fit: cover;
+    max-width: 100%;
+    height: 200px; /* Ajuste selon le rendu souhaité */
+    object-fit: contain;
     border-right: 1px solid #e0e0e0;
 }
 
+
 /* Conteneur des informations du projet */
+/*
 .project-info {
     flex: 1 1 70%;
     padding: 1.5rem;
     color: #333;
     font-family: 'Arial', sans-serif;
 }
+*/
+
+.project-info {
+    display: block;
+}
+
 
 /* Titre du projet */
 .project-info h2 {
