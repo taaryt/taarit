@@ -33,16 +33,6 @@ images.forEach(img => {
     img.onload = () => img.style.opacity = "1";
 });
 
-// Indiquer la page active dans le menu
-const links = document.querySelectorAll("nav a");
-const currentURL = window.location.href;
-links.forEach(link => {
-    if (link.href === currentURL) {
-        link.style.fontWeight = "bold";
-        link.style.textDecoration = "underline";
-    }
-});
-
 
 
 
@@ -70,19 +60,6 @@ document.addEventListener("DOMContentLoaded", () => {
             if (target) {
                 target.scrollIntoView({ behavior: "smooth" });
             }
-        });
-    });
-
-    // Galerie d'images interactive
-    document.querySelectorAll('.interet img').forEach(img => {
-        img.addEventListener('click', function () {
-            const modal = document.createElement("div");
-            modal.classList.add("modal");
-            modal.innerHTML = `<div class="modal-content"><img src="${this.src}" alt="Image"><span class="close">&times;</span></div>`;
-            document.body.appendChild(modal);
-
-            modal.querySelector(".close").addEventListener("click", () => modal.remove());
-            modal.addEventListener("click", (e) => { if (e.target === modal) modal.remove(); });
         });
     });
 
