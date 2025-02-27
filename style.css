@@ -294,27 +294,28 @@ footer {
 
 /*   ---------------------------------------                        Projets                      ---------------------------------------                             */
 
-/* Barre de navigation */
-.navRealisation {
+
+.navRealisation{
     padding: 10px;
     margin-bottom: 10px;
+    position:initial;
+    text-shadow:#dc7539;
+    box-shadow: #dc7539;
     width: 100%;
     background-color: #e8e8e8d2;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
 }
 
-.navRealisation a {
-    color: #000000;
-    font-size: 1.3em;
-    text-decoration: none;
-    margin: 5px 15px;
+
+.navRealisation a{
+
+    color:#000000;
+    font-size: 1.5em;
+
 }
 
-/* Section principale */
+
+
+/* Style général pour la section principale */
 .projects {
     display: flex;
     flex-direction: column;
@@ -323,7 +324,7 @@ footer {
     background-color: #f9f9f9;
 }
 
-/* Style de chaque projet */
+/* Style pour chaque projet */
 .project {
     display: flex;
     flex-wrap: wrap;
@@ -334,7 +335,6 @@ footer {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    padding: 15px;
 }
 
 .project:hover {
@@ -342,36 +342,67 @@ footer {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* Image du projet */
+/* Style pour les images des projets */
 .project img {
-    flex: 1 1 35%;
+    flex: 1 1 30%;
     max-width: 100%;
-    height: auto;
-    object-fit: cover;
+    height: 200px; /* Ajuste selon le rendu souhaité */
+    object-fit: contain;
     border-right: 1px solid #e0e0e0;
 }
 
-/* Infos du projet */
+
+/* Conteneur des informations du projet */
+/*
 .project-info {
-    flex: 1 1 65%;
+    flex: 1 1 70%;
     padding: 1.5rem;
     color: #333;
     font-family: 'Arial', sans-serif;
 }
+*/
 
+.project-info {
+    display: block;
+}
+
+
+/* Titre du projet */
 .project-info h2 {
-    font-size: 1.6rem;
-    margin-bottom: 0.8rem;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
     color: #000000;
 }
 
+/* Description du projet */
 .project-info p {
     font-size: 1rem;
     line-height: 1.6;
     margin-bottom: 1rem;
 }
 
-/* Boutons */
+/* Mise en évidence des technologies */
+.project-info p strong {
+    color: #000000;
+}
+
+/* Style responsive */
+@media (max-width: 768px) {
+    .project {
+        flex-direction: column;
+    }
+    .project img {
+        flex: 1 1 100%;
+        max-width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #e0e0e0;
+    }
+    .project-info {
+        flex: 1 1 100%;
+    }
+}
+
+/* Style de base pour les boutons */
 .btn {
     display: inline-block;
     padding: 0.75rem 1.5rem;
@@ -379,28 +410,27 @@ footer {
     font-size: 1rem;
     font-weight: bold;
     color: #fff;
-    background-color: #dc7539;
+    text-align: center;
     text-decoration: none;
+    background-color:#dc7539;
     border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
+
 
 .btn:hover {
     background-color: #000000;
     transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
 }
 
-/* RESPONSIVE DESIGN */
-@media (max-width: 768px) {
-    .project {
-        flex-direction: column;
-        text-align: center;
-    }
+.project-info .btn {
+    align-self: flex-start;
+}
 
-    .project img {
-        flex: 1 1 100%;
-        border-right: none;
-        border-bot
+
+
 
 
 /*   ---------------------------------------                        Projets                      ---------------------------------------                             */
@@ -797,6 +827,5 @@ img {
     color: white;
     cursor: pointer;
 }
-
 
 
